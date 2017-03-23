@@ -68,8 +68,6 @@ $\displaystyle \Delta p_{x} = J_x = F_x \Delta t$ \\
 \medskip
 %$\displaystyle \Delta p_{x} = 0 \ (isolated~system)$ \\
 $\displaystyle \Delta \vec{p} = 0 \ (isolated~system)$ \\
-\medskip
-$\displaystyle \vec{X}_{\rm CM} = \frac{1}{M}\sum m_i\vec{x}_i \ \left(M = \sum m_i\right)$ \\
 
 
 \bigskip
@@ -547,7 +545,7 @@ $\displaystyle \Delta U = Q + W$\\
 $\displaystyle Q=mc\Delta T$\\
 \medskip
 %$\displaystyle \Delta H = \Delta U + P\Delta V$\\
-$W=-\int P dV$\\
+$W=-P_{ext}V$\\
 \medskip
 $U=NkT$\\
 \medskip
@@ -561,25 +559,14 @@ $\displaystyle L = \frac{Q}{m}$\\
 \medskip
 $\displaystyle v_{rms} = \sqrt{\frac{3 k T}{m}} $ \\
 \medskip
-\noindent{\bf Adiabatic}: no heat exchanged\\
-\noindent{\bf Isothermal}: constant temperature\\
-\noindent{\bf Isobaric}: constant pressure\\
-
-\bigskip
 {\bf Classical Mechanics} \\
 \bigskip
-$\displaystyle \mathcal{L}(q,\dot{q},t)  = T - U$ \\
+$\displaystyle \mathcal{L} = T - U$ \\
 \medskip
 $\displaystyle \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}_{i}}\right) - \frac{\partial \mathcal{L}}{\partial q_{i}}$ = 0 \\
-\medskip
-$\displaystyle \mathcal{H}(q,p) = T + U$ (for a conservative potential) \\
-\medskip
-$\displaystyle \dot{p} = -\frac{\partial \mathcal{H}}{\partial q} \qquad
-\dot{q} = +\frac{\partial \mathcal{H}}{\partial p}$
 \bigskip
 
-{\bf Blackbody radiation} \\
-\bigskip
+{\bf Blackbody radiation} 
 %Stefan's law
 $\displaystyle R=\sigma T^4 \, , \quad \sigma=5.67 \times 10^{-8} W/m^2 K^4 $ \\
 \medskip
@@ -594,7 +581,7 @@ $\displaystyle e V_0=\left( \frac{1}{2} m v^2\right)=hf-\phi $ \\
 \medskip
 %Compton Scattering
 $\displaystyle \lambda_2-\lambda_1=\frac{h}{mc}(1-\cos \theta)  \, , \quad \textrm{where } \frac{h}{mc}=0.00243\,  \textrm{nm} $\\
-\bigskip
+\medskip
 
 {\bf Nuclear  physics} \\
 ${}^A_Z X_N \to   A=Z+N $ \\
@@ -625,7 +612,7 @@ $\sigma = \sqrt{N_{counts}}$ \\
 \qbezier(40,35)(55,45)(65,45)
 \qbezier(65,45)(75,45)(90,35)
 \qbezier(90,35)(110,20)(130,17)
-\put(210,40){\makebox(0,0)[r]{$P(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left( \frac{x-\mu}{\sigma^2} \right)}$}}
+\put(210,40){\makebox(0,0)[r]{$P(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2}$}}
 \multiput(45,14)(40,0){2}{\multiput(0,0)(0,4){6}{\line(0,1){2}}}
 \multiput(65,14)(0,4){8}{\line(0,1){2}}
 \put(45,12){\makebox(0,0)[tc]{$\scriptstyle\mu-\sigma$}}
