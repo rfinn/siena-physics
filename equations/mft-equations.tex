@@ -342,20 +342,15 @@ $\displaystyle Emf = - \frac{d\Phi_{B}}{dt} = -\frac{\Delta
 \bigskip
 
 {\bf Maxwell's Equations} \\
-\medskip
-$\displaystyle \oint \vec{E} \cdot d\vec{A} = \frac{Q_{\rm
-    in}}{\epsilon_0} $ \\  
-\medskip
-$\displaystyle \oint \vec{B} \cdot d\vec{A} = 0 $ \\ 
-\medskip
-$\displaystyle \oint \vec{E} \cdot d\vec{s} = -\frac{d\Phi_B}{dt} $
-\\ 
-\medskip
+\begin{tabular}{l|l}
+$\displaystyle \oint \vec{E} \cdot d\vec{A} = \frac{Q_{\rm in}}{\epsilon_0}$  & $\nabla \cdot  \vec{E}=\frac{\rho_{in}}{\epsilon_0} $ \\
+$\displaystyle \oint \vec{B} \cdot d\vec{A} = 0$  & $\nabla \cdot \vec{B}=0$\\ 
+$\displaystyle \oint \vec{E} \cdot d\vec{s} = -\frac{d\Phi_B}{dt}$  & $\nabla \times \vec{E}=-\frac{d\vec{B}}{dt}$\\ 
 $\displaystyle \oint \vec{B} \cdot d\vec{s} = \mu_0 I + \mu_0
-\epsilon_0 \frac{d \Phi_E}{dt} $ \\ 
+\epsilon_0 \frac{d \Phi_E}{dt}$ & $\nabla \times  \vec{B}= \mu_0 J+ \mu_0 \epsilon_0  \frac{d \vec{E}}{dt} $ 
+\end{tabular}
+
 \bigskip
-
-
 {\bf Simple Harmonic Motion \& Waves} \\
 \bigskip
 $\displaystyle x(t) = A~ \cos(\omega t + \phi_0)~~~(simple~harmonic~motion)$\\
@@ -547,10 +542,14 @@ compton effect
 \bigskip
 $\displaystyle \Delta U = Q + W$\\ 
 \medskip
-$\displaystyle mc\Delta T = Q$\\
+$\displaystyle Q=mc\Delta T$\\
 \medskip
-$\displaystyle \Delta H = \Delta U + P\Delta V$\\
+%$\displaystyle \Delta H = \Delta U + P\Delta V$\\
+$W=-P_{ext}V$\\
 \medskip
+$U=NkT$\\
+\medskip
+$PV=NkT$\\
 \medskip
 $\displaystyle \beta = \frac{\Delta V/V}{\Delta T}$\\
 \medskip
@@ -605,6 +604,24 @@ $\displaystyle \beta^{+}$ decay: ${}^A_{Z} X_N \to {}^{A}_{Z-1} X_{N+1} +\beta^{
 \medskip
 {\bf Statistics and Uncertainty} \\
 $\sigma = \sqrt{N_{counts}}$ \\
+
+\begin{picture}(140,95)
+\put(30,10){\vector(0,1){85}}
+\put(0,15){\vector(1,0){145}}
+\qbezier(0,17)(20,20)(40,35)
+\qbezier(40,35)(55,45)(65,45)
+\qbezier(65,45)(75,45)(90,35)
+\qbezier(90,35)(110,20)(130,17)
+\put(210,40){\makebox(0,0)[r]{$P(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left( \frac{x-\mu}{\sigma^2} \right)}$}}
+\multiput(45,14)(40,0){2}{\multiput(0,0)(0,4){6}{\line(0,1){2}}}
+\multiput(65,14)(0,4){8}{\line(0,1){2}}
+\put(45,12){\makebox(0,0)[tc]{$\scriptstyle\mu-\sigma$}}
+\put(65,12){\makebox(0,0)[tc]{$\scriptstyle\mu\vphantom{-sigma}$}}
+\put(85,12){\makebox(0,0)[tc]{$\scriptstyle\mu+\sigma$}}
+\put(138,12){\makebox(0,0)[tc]{$x$}}
+\end{picture}
+
+
 \medskip
 {\bf Astronomy} \\
 Kepler's First Law: planets orbit in elliptical orbits \\
