@@ -1,4 +1,4 @@
-ALL=	moustakas-proposal-2017.pdf
+ALL=	moustakas-proposal-17may03.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
