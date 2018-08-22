@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
-\usepackage{graphics,graphicx,array}
+\usepackage{graphics,graphicx,array,soul}
 \usepackage[obeyspaces]{url}
+\PassOptionsToPackage{obeyspaces}{url}
+
 \usepackage{hyperref}
 
 \headheight=0in
@@ -19,7 +21,9 @@
 \begin{center}
 {\LARGE {\bf Frequently Asked Questions}} \\
 \medskip
-{\Large {\bf 4/1 Program with Clarkson University}} 
+{\Large {\bf 4/1 Program with Clarkson University}}  \\
+\medskip
+{\em Last Updated: August 2018}
 \end{center}
 \vspace{0.3cm}
 
@@ -28,28 +32,29 @@
 \begin{itemize}
 \item{{\bf {\em What is this document? Where can I get for more information?}} 
 
-This document is meant to be an unofficial guide for students at Siena College
-\emph{considering} the 4/1 Program; it is not a replacement for speaking at
-length with your academic advisor and with the Dean of the School of Engineering
-and Computer Science at Clarkson University, Robert Kozik (bkozik@clarkson.edu).
-At Siena you may also reach out to Prof. John Moustakas (jmoustakas@siena.edu)
-in the Physics Department if you have specific questions not answered below.
-Finally, you should reach out to your peers at Siena who have already started
-taking classes at Clarkson as part of the 4/1 Program---their experiences are an
-invaluable resource!}
+This document is an unofficial guide for students at Siena College
+\emph{considering} the 4/1 Program; it is \emph{not} a replacement for speaking
+at length with your academic advisor and with the Associate Dean of Engineering
+at Clarkson University, Hugo Irizarry-Quinones (518-631-9882,
+hirizarr@clarkson.edu).  At Siena you may also reach out to Prof. Michele
+McColgan (mmccolgan@siena.edu) in the Physics Department if you have specific
+questions not answered below.  Finally, you should reach out to your peers at
+Siena who have already started taking classes at Clarkson as part of the 4/1
+Program---their experiences are an invaluable resource!}
 
 \item{{\bf {\em What is the 4/1 program?}}
 
 The 4/1 Program is an articulation between Siena College and Clarkson University
 which allows undergraduate students pursuing their BS in Physics, Environmental
-Science, Computer Science, or Mathematics to take graduate-level courses at the
-Clarkson University Capital Region Campus in Schenectady, NY, giving them a jump
-on obtaining their engineering masters degree in just one additional year
-(hence, the ``4/1 Program'').  You may take up to \underline{three} courses at
-Clarkson as part of your Siena tuition (i.e., without paying any additional
-fees).  In addition, the courses you take at Clarkson may also satisfy your
-upper-level major course requirements, although that depends on the course and
-your department---see your advisor for details.}
+Science, Computer Science, Computational Science, or Mathematics to take
+graduate-level courses at the Capital Region Campus (CRC) of Clarkson University
+in Schenectady, NY, giving them a jump on obtaining their engineering masters
+degree in just one additional year (hence, the ``4/1 Program'').  You may take
+up to \underline{three} courses at Clarkson as part of your Siena tuition (i.e.,
+without paying any additional fees).  In addition, the courses you take at
+Clarkson may also satisfy your upper-level major course requirements, although
+that depends on the course and your department---see your academic advisor for
+details.}
 
 %In the physics department these courses also count toward your
 %required upper-level physics courses (as PHYS400).  See your advisor for
@@ -57,39 +62,59 @@ your department---see your advisor for details.}
 
 \item{{\bf {\em What engineering degrees are available?}}
 
-The three Master of Science (M.S.) programs currently available to students are
-{\em Electrical Engineering} (MSEE), {\em Engineering and Management Systems}
-(MSEM), and {\em Energy Systems} (MSE).  Quoting from the program catalog, the
-MSEE program ``explores technologies and industry opportunities in modern
-electric machinery, modeling and control of power electronics.''  The MSEM
-program integrates ``engineering and/or information systems technologies with
-the core components of an MBA, including Business of Energy Program courses.''
-And the MSE degree enables ``students to integrate (1) mechanical/electrical
-energy related courses, (2) mechanical and electrical fundamental discipline
-courses, and (3) non-technical courses regarding the impact of environmental,
-economic, and regulatory issues on energy.''}
+The three Master of Science (M.S.) programs currently available to Siena
+students are \ul{Electrical Engineering} (MSEE), \ul{Engineering and Management
+  Systems} (MSEM), and \ul{Energy Systems} (MSE).  Quoting from the program
+catalog, the MSEE program ``explores technologies and industry opportunities in
+modern electric machinery, modeling and control of power electronics.''  The
+MSEM program integrates ``engineering and/or information systems technologies
+with the core components of an MBA, including Business of Energy Program
+courses.''  And the MSE degree enables ``students to integrate (1)
+mechanical/electrical energy related courses, (2) mechanical and electrical
+fundamental discipline courses, and (3) non-technical courses regarding the
+impact of environmental, economic, and regulatory issues on energy.''
+%\textbf{Any other programs?  Business of Energy?}
+}
+
+\item{{\bf {\em What about Mechanical Engineering?}}
+
+The mechanical engineering masters track (\ul{Master of Science in Mechanical
+  Engineering}, MSME) is an option that Siena College and Clarkson University
+are still discussing, so be sure to ask your academic advisor for the latest
+information.  However, it is \emph{possible} that students majoring in applied
+physics may be able to pursue a masters in mechanical engineering after they
+have completed some supplemental undergraduate mechanical engineering courses at
+RPI, Clarkson University, or Union College.}
+
+%\item{{\bf {\em What are the job and internship prospects?}}
+%Jobs, internships, etc. 
+%}
 
 \item{{\bf {\em When can I start taking classes at Clarkson?}}
 
-Students can start taking classes as soon as they have room in their schedule
-and have sufficient mathematics preparation, typically in their junior or senior
-year.  Although these are not formal prerequisites, for the more technical
-electrical engineering courses (e.g., {\em Linear Control Systems}) it is
-strongly recommended that students have completed all three semesters of
-calculus, differential equations, and either linear algebra or applied
-mathematics (ideally, both), as well as some experience with {\tt Matlab}/{\tt
-  Simulink}.  Some of the business-oriented courses (e.g., {\em Fundamentals of
-  the Business of Energy}) may be taken without having completed as much math,
-although they are still graduate-level courses and require a significant amount
-of work.}
+Students can start taking classes as soon as they have room in their schedule,
+typically in their junior or senior year.  Although these are not formal
+prerequisites, for the more technical electrical engineering courses (e.g., {\em
+  Linear Control Systems}) it is strongly recommended that students have
+completed all three semesters of calculus, differential equations, and either
+linear algebra or applied mathematics (ideally, both), as well as some
+experience with {\tt Matlab}/{\tt Simulink}.  By contrast, some of the
+business-oriented courses (e.g., {\em Fundamentals of the Business of Energy})
+may be taken without having completed as much math, although they are still
+graduate-level courses and require a significant amount of work.  Finally, some
+courses like {\em Wind Energy Engineering} are more project-based, and can
+therefore be taken as early as a student's junior year.}
 
 \item{{\bf {\em When are the academic terms at Clarkson?}}
 
-Unlike Siena, Clarkson is on a 10-week trimester system.  The fall, winter, and
-spring trimesters are roughly from early September to late November, early
-January to mid-March, and early April to early June, respectively.  (Please note
-that only the fall term is aligned with the housing term at Siena; therefore, if
-you do not live locally and need to take winter and/or spring courses you need
+Unlike Siena, the Capital Region Campus of Clarkson University is (currently) on
+a 10-week trimester system.\footnote{Please be aware that the CRC campus is
+  moving to a semester system most likely in Fall 2019, although the courses
+  will still likely be the same duration.}  The fall, winter, and spring
+trimesters are roughly from early September to late November, early January to
+mid-March, and early April to early June, respectively.  (Please note that only
+the fall term is aligned with the housing term at Siena; therefore, if you do
+not live locally---and need to take winter and/or spring courses---you will need
 to consider where you will live while taking courses at Clarkson.)  In addition,
 there is typically a summer session of selective classes from mid-June to the
 end of August.  The classes typically take place during the week and in the
@@ -97,51 +122,41 @@ evening.  The average class size is around 12 students.}
 
 \item{{\bf {\em What classes are offered?  What are the prerequisites?}}
 
-The courses available varies somewhat from year-to-year, so you should speak
-with your advisor and Dean Kozik about which courses are available and whether
-you are ready to start taking courses at Clarkson.  Some of the courses our
-students have taken (and when they are typically offered) include {\em Linear
-  Control Systems} (fall), {\em Fundamentals of Business of Energy} (online,
-offered frequently), {\em Solar Energy Engineering} (winter), {\em Fuel Cell \&
-  Hydrogen Engineering} (varies), {\em Wind Energy Engineering} (project-based,
-spring), and {\em Electromechanical Energy Conversion}.}
+The courses available varies somewhat from year-to-year, so you should ask your
+advisor and/or Dean Irizarry-Quinones for the latest course schedule, and
+whether you are ready to start taking courses.  Some of the courses our students
+have taken (and when they are typically offered) include {\em Electromechanical
+  Energy Conversion} (fall, technical), {\em Electronic Power Conversion}
+(winter, technical), {\em Linear Control Systems} (fall, technical), {\em
+  Fundamentals of Business of Energy} (online, offered frequently), {\em Solar
+  Energy Engineering} (winter, project-based), {\em Wind Energy Engineering}
+(spring, project-based).}
 
-\item{{\bf {\em How do I apply to the program?  How do I register for classes?
-      What are the minimum requirements?}}
+\item{{\bf {\em How do I register for classes?  What are the minimum
+      requirements?}}
 
-In order to apply to the program you must submit an \underline{Application
-  Form}\footnote{http://www.clarkson.edu/artsandsci/documents/graddocuments/CompleteApplicationPacket.pdf},
-an official transcript, a personal statement, proof of immunizations, and two
-(not three) letters of recommendation; the application fee is waived for Siena
-students.  Note that a minimum 3.0 GPA is also strongly recommended.  It is
-possible---and indeed recommended---that you take at least one class
-\emph{before} officially applying to Clarkson, so you can get a better idea of
-the courses and the program itself.  In that case you should get in contact with
-Dean Kozik about what documentation must be received in order to take an initial
-class as a non-matriculated student.
+A minimum cumulative 3.0 GPA is generally required before a student can take a
+graduate-level class, although exceptions may be made on a case-by-case basis.
 
-In order to register for classes you need to fill out the
-\underline{Registration
-  Form}\footnote{\url{https://www.clarkson.edu/sites/default/files/2017-10/Fall 2017 CRC Cross Registration Form.pdf}}specifically written for Siena
-students.  The second page of this registration form has detailed instructions
-that you should follow carefully, but basically the form will need to be signed
-by your acadmemic advisor, the Dean of the School of Science, and the Siena
-College registrar (Jim Serbalik, Siena Hall 102) before it is sent to Clarkson.
-Be sure to get these signatures well in advance of the start of classes!}
+In order to register for one or more classes you must complete (each term you
+are taking classes) the
+\underline{\href{http://www.clarkson.edu/sites/default/files/2017-10/CRC\%20Cross\%20Registration\%20Form.pdf}{Registration
+    Form}} specifically designed for Siena students.  The second page of this
+registration form has detailed instructions which should be followed carefully,
+but basically you will need the signature of your academic advisor, the
+Assistant Dean of the School of Science, Angela McKeever (Roger Bacon Hall 212,
+mckeever@siena.edu), and the Siena College Registrar, Jim Serbalik (Siena Hall
+102, serbalik@siena.edu) before it is sent to Clarkson University.  You will
+also need to send an unofficial transcript directly to Dean Irizarry-Quinones
+for his review and approval.  Be sure to get the registration form signed and
+submitted well in advance of the start of classes!} 
 
 \item{{\bf {\em How do I get credit for these classes on my CAPP report?}}
 
-The classes you take at Clarkson as part of the 4/1 Program are treated by the
-Siena registrar as if they were courses you took at Siena itself.  Therefore,
-once you complete the course at Clarkson and your grade has been submitted, a
-transcript from Clarkson will be sent to Siena so the grade and course can
-appear on your transcript and CAPP report.  This is supposed to happen
-automatically between the two institutions (without a fee!); however, it
-behooves you to follow up in person, by calling, or by emailing---and with your
-advisor---to make sure all the necessary information has been received and that
-your CAPP report looks correct.  For physics students, courses taken at Clarkson
-appear on their transcript and CAPP report as PHYS400 ({\em Special Topics in
-  Physics}).}
+The classes you take at Clarkson as part of the 4/1 Program are cross-registered
+with your Siena schedule.  Therefore, they count toward your full-time status as
+a student and appear on your schedule, transcript, and CAPP report, without any
+additional fees.}
 
 \item{{\bf {\em Are there research opportunities?}}
 
