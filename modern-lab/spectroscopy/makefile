@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	spectroscopy.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex

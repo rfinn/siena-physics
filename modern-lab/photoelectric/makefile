@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	photoelectric.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex

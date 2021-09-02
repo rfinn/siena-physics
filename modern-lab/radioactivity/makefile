@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	radioactivity.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
