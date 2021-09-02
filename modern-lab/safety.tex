@@ -1,0 +1,71 @@
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{Safety in the Laboratory}
+\author[John P. Cummings]{John P. Cummings}
+\date{Fall 2020} 
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent Safety hazards present in the modern physics laboratory and how to react to them.
+\end{abstract}
+
+%\printclassoptions
+
+
+\section{Electrical Hazards}\label{sec:electrical-hazards}
+The major hazards associated with electricity are electrical shock and fire. Electrical shock occurs when the body becomes part of the electric circuit, either when an individual comes in contact with both wires of an electrical circuit, one wire of an energized circuit and the ground, or a metallic part that has become energized by contact with an electrical conductor.
+
+The severity and effects of an electrical shock depend on a number of factors, such as the pathway through the body, the amount of current, the length of time of the exposure, and whether the skin is wet or dry. Water is a great conductor of electricity, allowing current to flow more easily in wet conditions and through wet skin. The effect of the shock may range from a slight tingle to severe burns to cardiac arrest. The chart below shows the general relationship between the degree of injury and amount of current for a 60-cycle hand-to-foot path of one second's duration of shock. While reading this chart, keep in mind that most electrical circuits can provide, under normal conditions, up to 20,000 milliamperes of current flow 
+\begin{table}[ht]
+  \centering
+  \fontfamily{ppl}\selectfont
+  \begin{tabular}{ll}
+    \toprule
+    Current & Reaction \\
+    \midrule
+    \unit[1]{mA} & Perception level \\
+    \unit[5]{mA} & Slight shock felt; not painful but disturbing \\
+    \unit[6-30]{mA} & Painful shock; ``let-go'' range \\
+    \unit[50-150]{mA} & Respiratory arrest, severe muscular contraction \\
+    \unit[1000-4300]{mA} & Ventricular fibrillation\\
+    \unit[10000+]{mA} & Cardiac arrest, severe burns and probable death \\
+    \bottomrule
+  \end{tabular}
+  \caption{Effects of various currents at \unit[60]{Hz} }
+  \label{tab:normaltab}
+  %\zsavepos{pos:normaltab}
+\end{table}
+
+
+
+
+
+\end{document}
