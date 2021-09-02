@@ -1,23 +1,15 @@
-\documentclass{article}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage[margin=1in]{geometry}
+\section{Overview}
 
-
-\title{The Speed of Light}
-\author{John P. Cummings\\
-George Hassel}
-\date{Fall 2020}
-
-\begin{document}
-\maketitle
-
-\begin{abstract}
-In this lab you will perform an updated version of the experiment Galileo described in {\em Discourses and Mathematical Demonstrations Relating to Two New Sciences} to measure the speed of light.  Although the inherent uncertainties of this technique are reduced in this version by using modern technology, the principle of the measurement is the same:  determine the time required for light to traverse an known distance and calculate the velocity using 
+In this lab you will perform an updated version of the experiment Galileo
+described in {\em Discourses and Mathematical Demonstrations Relating to Two New
+  Sciences} to measure the speed of light.  Although the inherent uncertainties
+of this technique are reduced in this version by using modern technology, the
+principle of the measurement is the same: determine the time required for light
+to traverse an known distance and calculate the velocity using
 \[
 v=\frac{\Delta x}{\Delta t}
 \]
-\end{abstract}
+
 
 \section{Theory}
 
@@ -48,7 +40,7 @@ It is interesting to note that the ``ultimate speed limit,'' $c$, is the speed o
 
 \begin{figure}
 \centering
-\includegraphics{images/cherenkov.jpg}
+\includegraphics{../images/cherenkov.jpg}
 \caption{Photograph of the FRM II research reactor near Munich, Germany}
 \end{figure}
 
@@ -102,14 +94,14 @@ The laser used in this experiment is a diode laser, which allows us to easily tu
 
 \begin{figure}
 \centering
-\includegraphics{images/if-lsl-sa1opman-revd.jpg}
+\includegraphics{../images/if-lsl-sa1opman-revd.jpg}
 \caption{Universal Laser Receiver, top view.}
 \label{ULRtop}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics{images/if-lsl-sa1opman-revdfront.jpg}
+\includegraphics{../images/if-lsl-sa1opman-revdfront.jpg}
 \caption{Universal Laser Receiver, front view.}
 \label{ULRfront}
 \end{figure}
@@ -121,7 +113,7 @@ Either the Channel 1 or Channel 2 detector should be suitable for this experimen
 The concave mirror helps focus the light after it is reflected.  Adjusting screws are useful to re-aim the reflected beam, and are often the only adjustment necessary.  The mirror is a sensitive optical element, please do not touch the front surface or drop the mirror.
 
 \begin{figure}
-\includegraphics{images/AP8586.jpg}
+\includegraphics{../images/AP8586.jpg}
 \caption{Example set up of apparatus.}
 \end{figure}
 
@@ -135,7 +127,7 @@ In this lab you will produce a {\em modulated} beam of laser light using the dio
 \item If the laser is not already on its L-shaped bracket, mount it with the
 bracket bent away from the laser (Figure~\ref{fig:laser}).
 \begin{figure}[h]
-\includegraphics{images/diode-laser.jpg}
+\includegraphics{../images/diode-laser.jpg}
 \caption{\label{fig:laser} Laser with bracket}
 \end{figure}
 
@@ -149,7 +141,7 @@ bracket bent away from the laser (Figure~\ref{fig:laser}).
 \item Arrange the laser, lens, receiver and two component carriers on the
 laser alignment bench (Figure~\ref{fig:align}).
 \begin{figure}[h]
-\includegraphics{images/aligning.jpg}
+\includegraphics{../images/aligning.jpg}
 \caption{\label{fig:align} Aligning the lens, carriers, and receiver with the laser }
 \end{figure}
 % this may work better without the lens.  at least it is much easier to align.
@@ -246,11 +238,8 @@ Phase (ns) & Path length (m) \\
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{images/plot.pdf}
+\includegraphics[width=\textwidth]{../images/plot.pdf}
 \caption{\label{fig:plot}Plot and fit of sample data for speed of light experiment}
 \end{figure}
 
 It is sadly difficult to find fitting software that allows fits to points with error and returns errors on the fitted parameters, slope and $y$-intercept in this case.  In addition to fitting a line to your data, try calculating the slope based on two (widely spaced) points and compare the value for the speed of light you get using the two techniques.  For the simple slope calculation, find the error on the velocity by propagating the estimated errors on $\Delta d^\prime$ and $\Delta t^\prime$.  In your writeup, compare your two values and the world average value in light of this estimated error.
-
-
-\end{document}

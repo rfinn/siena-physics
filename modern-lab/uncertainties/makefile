@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	uncertainties.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex

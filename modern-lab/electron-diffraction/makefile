@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	electron-diffraction.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex

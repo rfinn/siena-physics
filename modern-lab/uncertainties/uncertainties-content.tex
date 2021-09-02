@@ -1,13 +1,3 @@
-\documentclass{article}
-\usepackage[pdftex]{graphicx}
-
-\title{Estimating and Handling Uncertainties in the Laboratory}
-\author{John P. Cummings}
-\date{Fall 2020}
-
-\begin{document}
-\maketitle
-
 \section{Introduction}
 The estimation of uncertainties is somewhat of an artform rather than a science.  Many assumptions are often made to give some rigor to this art; unfortunately we often forget the assumption when applying the procedures derived.  Don't forget to use your common sense.
 
@@ -28,7 +18,7 @@ If the device is digital, it will often have a specified resolution.  The trick 
 Some measurements will be dominated by other random contributions.  Take for example measuring the period of a pendulum with a stopwatch.  Repeated measurements will lead to slightly different results due to your reaction time, {\em etc.}  Here we make some assumptions referred to earlier, such as the distribution of results is random and normal (or Gaussian).  In other words, if we repeated the measurement many time and produced a {\em histogram} of the results we assume we would get a Gaussian distribution.
 
 \begin{figure}
-\includegraphics[width=4in]{images/gaussian.jpg}
+\includegraphics[width=4in]{../images/gaussian.jpg}
 \caption{A gaussian distribution.}
 \label{fig:gaussian}
 \end{figure}
@@ -55,7 +45,7 @@ Systematic uncertainties are much harder to quantify in a general fashion.  Sinc
 
 When measured values are used to calculate quantities it is important to propagate the error on the measured quantity through to the calculated value.  For a simple function of one measured variable it is easy to see (Figure~\ref{fig:error-prop})
 \begin{figure}
-\includegraphics[width=3in]{images/error-prop.png}
+\includegraphics[width=3in]{../images/error-prop.png}
 \caption{Propagating error}
 \label{fig:error-prop}
 \end{figure}
@@ -130,5 +120,3 @@ With most arithmetic operations you should keep in your answer the {\em fewest} 
 
 
 \end{enumerate}
-
-\end{document}

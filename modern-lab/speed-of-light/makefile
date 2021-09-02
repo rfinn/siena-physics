@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	speed-of-light.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
