@@ -1,4 +1,4 @@
-ALL=	electron-eom.pdf
+ALL=	thermal-radiation.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex

@@ -1,4 +1,4 @@
-ALL=	blackbody.pdf
+ALL=	michelson.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
