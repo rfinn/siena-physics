@@ -1,4 +1,4 @@
-ALL=	millikan.pdf
+ALL=	blackbody.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
