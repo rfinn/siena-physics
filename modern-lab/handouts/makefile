@@ -1,5 +1,6 @@
 ALL=	safety.pdf \
-	galileo.pdf
+	galileo.pdf \
+	log-plots.pdf
 
 LATEX =	pdflatex
 
