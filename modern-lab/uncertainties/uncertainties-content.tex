@@ -82,12 +82,6 @@ This technique of repeated measurements is useful if the other techniques above
 don't apply.  You could also use it to {\em measure} the resolution of a device
 or measurement technique for use during future measurements. 
 
-\begin{figure}
-\includegraphics[width=3in]{../images/precision-accuracy.png}
-\caption{Graphic illustrating the difference between precision and accuracy.}
-\label{fig:precacc}
-\end{figure}
-
 \subsection{Systematic Uncertainties}
 
 Systematic uncertainties are much harder to quantify in a general fashion.
@@ -112,17 +106,18 @@ precise and inaccurate (a possible sign of one or more systematic
 uncertainties), imprecise and accurate (OK but maybe build a better instrument),
 or even imprecise and inaccurate (start over!).
 
+\begin{figure}
+\includegraphics[width=3in]{../images/precision-accuracy.png}
+\caption{Graphic illustrating the difference between precision and accuracy.}
+\label{fig:precacc}
+\end{figure}
+
 \section{Propagation of Uncertainties}
 
 When measured values are used to calculate quantities it is important to
 propagate the uncertainty on the measured quantity through to the calculated
 value.  For a simple function of one measured variable it is easy to see
 (Figure~\ref{fig:error-prop})
-\begin{figure}
-\includegraphics[width=3in]{../images/error-prop.png}
-\caption{Propagating uncertainties.}
-\label{fig:error-prop}
-\end{figure}
 that the trick is to multiply the measured uncertainty by the derivative of the
 function with respect to the measured variable: 
 \begin{equation}
@@ -143,6 +138,12 @@ law,
 F = ma.
 \label{eq:newton}
 \end{equation}
+
+\begin{figure}
+\includegraphics[width=3in]{../images/error-prop.png}
+\caption{Propagating uncertainties.}
+\label{fig:error-prop}
+\end{figure}
 You measured the mass to be $m = 550.10~ {\rm g}$ and the scale has a resolution of $\sigma_m = 0.02 ~{\rm g}$.  The acceleration you measured was $a = 43 ~{\rm cm}/{\rm s}^2$ and the accelerometer has a resolution of $\sigma_a = 5 ~{\rm cm}/{\rm s}^2$.  You would record these values as $m = 550.10 \pm 0.02 ~{\rm g}$ and $a = 43 \pm 5 ~{\rm cm}/{\rm s}^2$.
 
 To calculate the central value of $F$, simply use the central value for the
@@ -218,7 +219,7 @@ of {\em decimal places} in your data.\sidenote{For example, consider $103.25 -
 \section{Exercises}
 
 \begin{enumerate}
-\item Measure the width and length of the whiteboard, and calculate the
+\item Measure the width and length of the whiteboard, calculate the area and the
   uncertainty.
   
 \item Measure and calculate the density of some metal shapes.  Compare your
