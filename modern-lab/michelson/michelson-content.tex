@@ -292,7 +292,7 @@ the corresponding number of fringes that pass by on the screen.
 Count a fairly large number of fringes, say roughly 30, and note the
 micrometer reading before and after.  Repeat this measurement several
 times using different parts of the micrometer dial to reduce errors from
-nonlinearities in the mirror mechanism..
+nonlinearities in the mirror mechanism.
 
 \item Qualitative observations
 
@@ -388,6 +388,53 @@ value.\sidenote{Suggestion: First compute $n_{atm} - 1$ using
     atm}$ itself. Note: The calculated $n_{\rm atm}$ will be slightly greater
   than 1, and {\em the final result must not be rounded off to 1.0!}}
 
+\end{enumerate}
+
+\subsection{Uncertainty Analysis}
+
+\begin{enumerate}
+
+\item Measuring the wavelength: There are two measurements: the change in the
+  number of fringes $\Delta m$, and the displacement of the movable mirror,
+  $\Delta d = d_2-d_1$, as measured by the micrometer. Make at least 2-3
+  different measurements, or two different ranges of displacement.  The
+  expression for wavelength $\lambda$ is a simple quotient, so the uncertainty
+  in the wavelength is a simple addition of the uncertainties in quadrature:
+  \begin{align*}
+    \sigma_\lambda = \lambda \sqrt{\left(\frac{\sigma_m}{m}\right)^2 +
+      \left(\frac{\sigma_{\Delta d}}{\Delta d}\right)^2}.
+  \end{align*}
+  Note that if one of these fractions is significantly smaller than the other,
+  you can omit it.\sidenote{Why?} Be sure to check that the experimental value
+  for $\lambda$ you obtain agrees with your expectation for red light, and with
+  your answer to the preliminary question.
+
+\item Measuring the index of refraction of a glass slide: The expression for
+  $n_{\mathrm{glass}}$ is an approximation and is somewhat complex. To simplify
+  the uncertainty analysis, estimate uncertainty in the slide thickness, $t$,
+  the change in the number of fringes, $\Delta m$, and the wavelength,
+  $\lambda$, and find the relative uncertainty in each.\sidenote{In other words,
+    divide the uncertainty by the measurement.} Now, the angle $\theta$ appears
+  in the equation not directly as the angle, but as $\cos\theta$; however, note
+  that
+  \begin{align*}
+    \sigma(\cos\theta) = \left| \frac{\partial
+      \cos\theta}{\partial\theta}\right| d\theta \approx \sin\theta,
+  \end{align*}
+  and so the uncertainty in $n_{\mathrm{glass}}$ becomes
+  \begin{align*}
+    \sigma_n = n \sqrt{\left(\frac{\sigma_t}{t}\right)^2 +
+      \left(\frac{\sigma_m}{m}\right)^2 +
+      \left(\frac{\sigma_\lambda}{\lambda}\right)^2 + (\tan\theta)^2}.
+  \end{align*}
+  Of course, if one or more of these fractions is significantly smaller than the
+  other, you can omit it.
+
+\item Measuring index of air: Estimate the uncertainty in the measured
+  uncertainties in the thickness $t$, the wavelength $\lambda$, and the change
+  in the number of fringes, $\Delta m$.  Use a similar addition-in-quadrature
+  developed above in order to estimate the uncertainty in $(n_{\mathrm
+    atm}-1)$. 
 \end{enumerate}
 
 %\section{References}
