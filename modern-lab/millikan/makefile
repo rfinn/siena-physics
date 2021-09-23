@@ -10,6 +10,8 @@ LATEX =	pdflatex
 
 all: $(ALL)
 
+millikan.pdf: millikan.tex millikan-title.tex millikan-content.tex
+
 clean:
 	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
 
