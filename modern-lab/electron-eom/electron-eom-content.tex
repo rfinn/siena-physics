@@ -217,6 +217,57 @@ the mean). Compare your results (including the uncertainty) to
 $e/m$ as obtained from standard values of $e$ and $m$.
 \end{enumerate}
 
+\section{Uncertainty Analysis}
+
+To determine the uncertainty on the electron-to-mass ratio, $e/m$, look again at
+Eqs.~\ref{eom}, \ref{helmholtz}, and \ref{circle}. The expression for $e/m$
+depends on $V_a$, $B$, and $r$; $r$, in turn, depends on $x$ and $y$, while $B$
+depends on $I$.
+%One way to find the uncertainty is with addition in quadrature:
+%\begin{equation}
+%\sigma(e/m) = \sqrt{ \left(\frac{\sigma_{Va}}{V_a}\right)^2 +
+%  \left(\frac{2\sigma_B}{B}\right)^2 + \left(\frac{2\sigma_r}{r}\right)^2 },
+%\end{equation}
+%\noindent where we define $\sigma_B$ and $\sigma_r$ below.
+The total uncertainty, $\sigma(e/m)$, therefore, is:
+\begin{equation}
+\sigma(e/m) = \sqrt{ 
+  \left(\frac{\partial(e/m)}{\partial V_a} \sigma_{Va}\right)^2 + 
+  \left(\frac{\partial(e/m)}{\partial B} \sigma_B\right)^2 + 
+  \left(\frac{\partial(e/m)}{\partial r} \sigma_r\right)^2 },
+\label{eq:sigma_eom}
+\end{equation}
+\noindent where $\sigma_{Va}$, $\sigma_B$, and $\sigma_r$ are the uncertainties
+on $V_a$, $B$, and $r$, respectively. 
+
+Although this equation may appear intimidating, you can attack it in parts:
+\begin{itemize}
+  \item First, derive an expression for $\partial(e/m)/\partial V_a$ and
+    multiply by $\sigma_{Va}$ to get the uncertainty due to the accelerating
+    voltage.
+  \item Next, derive an expression for $\partial(e/m)/\partial B$. Here,
+    although you don't have an uncertainty in $B$, you can easily show that
+    $\sigma_B = C\sigma_I$, where $C$ is the constant determined in the lab, and
+    $\sigma_I$ is the measured uncertainty in the current. Substitute these
+    results into your expression to get the uncertainty on $e/m$ due to the
+    $B$-field.
+  \item Finally, first derive an expression for $\partial(e/m)/\partial r$ and
+    use the following result (which you could also derive yourself!):
+    \begin{equation}
+      \sigma_r = \sqrt{ \left(\frac{x}{y}\sigma_x\right)^2 +
+        \left(\frac{y^2-x^2}{2y^2} \sigma_y\right)^2 }.
+    \end{equation}
+\end{itemize}
+
+Determine if any of the terms in Eq.~\ref{eq:sigma_eom} are negligibly small
+compared to the others and, if so, you can ignore them from your final
+calculations. 
+
+Finally, you can also compare the standard deviation of the mean of $e/m$ you
+measure from multiple trials against the formal uncertainty you determine using
+the procedure above. Are they different and, if so, why?
+
+
 \section{References}
 \begin{itemize}
 \item Thornton and Rex, Modern Physics, $3^{\rm rd}$ ed., pp. 85-89
