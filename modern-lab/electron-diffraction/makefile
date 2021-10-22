@@ -10,7 +10,10 @@ LATEX =	pdflatex
 
 all: $(ALL)
 
+electron-diffraction.pdf: electron-diffraction.tex electron-diffraction-title.tex electron-diffraction-content.tex
+
 clean:
 	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
 
 dummy:
+
