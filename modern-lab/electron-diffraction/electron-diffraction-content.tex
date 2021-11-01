@@ -125,17 +125,16 @@ connected to the negative DC terminal.  The positive DC voltage
 terminal is connected to the plug pointing perpendicular to the tube
 axis located near the graphite film.
 
-The graphite film is polycrystalline---composed of large number of
-crystallites (very tiny perfect crystals) randomly oriented within the
-material.  Referring to Bragg's law (Eq.~\ref{eq:bragglaw}), we note
-that for a given order $m$ (say $m$ = 1) and a given $d$ (for a particular
-family of planes), there is only one value of the angle ${\theta}$
-which satisfies the Bragg condition for a strong reflection.  If our
-sample consisted of a single crystal, we would have to rotate it into
-position so that the planes would be at the proper angle for the Bragg
-reflection.  However, with our polycrystalline sample, there will
-always be some crystallites in the proper orientation to give a Bragg
-reflection at that angle, as illustrated in Figure 2 below.
+The graphite film is polycrystalline---composed of large number of crystallites
+(very tiny perfect crystals) randomly oriented within the material.  Referring
+to Bragg's law (Eq.~\ref{eq:bragglaw}), we note that for a given order $n$ (say
+$n$ = 1) and a given $d$ (for a particular family of planes), there is only one
+value of the angle ${\theta}$ which satisfies the Bragg condition for a strong
+reflection.  If our sample consisted of a single crystal, we would have to
+rotate it into position so that the planes would be at the proper angle for the
+Bragg reflection.  However, with our polycrystalline sample, there will always
+be some crystallites in the proper orientation to give a Bragg reflection at
+that angle, as illustrated in Figure 2 below.
 \begin{figure}
 \begin{centering}
 \includegraphics[width=4in]{../images/ediffraction-img2.png}
@@ -269,9 +268,35 @@ the experimental uncertainty into account.
 %in step 2?  Discuss briefly.
 \end{enumerate}
 
+\section{Uncertainty Analysis}
+
+The major source of uncertainty in the lab is the width of the diffraction ring,
+and there is also some uncertainty in the accelerating voltage.  Use the
+relative uncertainty in these measurements to estimate the uncertainty in the
+slope of your log-log plot:
+
+\begin{align*}
+\sigma_{slope} = slope \sqrt{\left(\frac{\sigma_{(\log\,V)}}{\log\,V}\right)^2 +
+  \left(\frac{\sigma_{(\log\,D)}}{\log\,D}\right)^2},
+\end{align*}
+\noindent where the uncertainty on the logarithmic of a quantity, $x$, is given
+by 
+\begin{align*}
+  \sigma_{(\log\,x)} = \frac{\sigma_x}{x\ln(10)}.
+\end{align*}
+
+The experimental value of the aperture or plane spacing should be the same value
+for all measurements of one ring, so the result should be expressed as an
+average of the values, with an uncertainty of
+\begin{align*}
+\sigma_d = \frac{stddev(d)}{\sqrt{number\ of\ measurements}}.
+\end{align*}
+
+
 \section{Reference}
 \begin{itemize}
 \item French and Taylor, An Introduction to Quantum Physics, pp. 72-78
 \item Thornton and Rex, Modern Physics $3^{\rm rd}$ edition, pp. 171-173
 \item Tipler and Llewellyn, Modern Physics $5^{\rm th}$ edition, pp. 185-192
+
 \end{itemize}

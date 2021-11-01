@@ -10,7 +10,9 @@ LATEX =	pdflatex
 
 all: $(ALL)
 
+beta-spectroscopy.pdf: beta-spectroscopy.tex beta-spectroscopy-title.tex beta-spectroscopy-content.tex
+
 clean:
-	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out $*.pdf
+	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
 
 dummy:
