@@ -10,7 +10,10 @@ LATEX =	pdflatex
 
 all: $(ALL)
 
+radioactivity.pdf: radioactivity.tex radioactivity-title.tex radioactivity-content.tex
+
 clean:
-	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
+	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out $*.pdf
 
 dummy:
+
