@@ -1,0 +1,1 @@
+period=((get_time(6,away1)-get_time(0,away1))+(get_time(6,away2)-get_time(0,away2))+(get_time(6,toward1)-get_time(0,toward1))+(get_time(6,toward2)-get_time(0,toward2)))/24
