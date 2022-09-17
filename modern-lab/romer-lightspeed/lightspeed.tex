@@ -97,9 +97,11 @@ Although R{\o}mer never calculated a value for the speed of light, Christian Huy
 
 The exercise for this lab is to reconstruct R{\o}mers argumant and recalculate using modern observations.  Below is a table of eclipse timings from the mid 1990's.  This table, which I will also provide as a text file also so you can read it into {\sc MATLAB}, and the radius of the Earth's orbit is all you should need to calculate $c$.
 
-You should first use the data to determine the period of Io.  I would suggest using data from a region of Earths orbit that is not affected significantly by the finite speed of light.  What part of the Earths orbit meets this criterion?
+{\bf You should first use the data to determine the period of Io.}  I would suggest using data from a region of Earths orbit that is not affected significantly by the finite speed of light.  What part of the Earths orbit meets this criterion?
 
-Once you have determined a period, use it to predict the time of a later eclipse (either beginning or end of eclipse, depending on the data you are using).  Once you have the predicted time, find the difference in time with the corresponding eclipse observation from the tables.  By using this time difference and the distance the earth has moved between the two eclipse observations, you should be able to calculate the speed of light.
+{\bf Once you have determined a period, use it to predict the time of a later eclipse} (either beginning or end of eclipse, depending on the data you are using).  Once you have the predicted time, find the difference in time with the corresponding eclipse observation from the tables.  By using this time difference and the distance the earth has moved between the two eclipse observations, you should be able to calculate the speed of light.
+
+\section{Using MATLAB}
 
 If you are reading the data files into {\sc MATLAB}, I would suggest spending a few minutes building some tools to help your analysis. 
 
@@ -148,7 +150,7 @@ Once you have these, you should be able to write a little {\sc matlab} script th
 18 & 15/01/95 & 05h08 & 52 & 16/03/95 & 09h09 & 86 & 15/05/95 & 13h10 \\
 19 & 16/01/95 & 23h36 & 53 & 18/03/95 & 03h37 & 87 & 17/05/95 & 07h39 \\
 20 & 18/01/96 & 18h05 & 54 & 19/03/95 & 22h05 & 88 & 19/05/95 & 02h07 \\
-21 & 20/01/95 & 12h33 & 55 & 21/03/95 & 16h33 & 89 & 19/05/95 & 20h36 \\
+21 & 20/01/95 & 12h33 & 55 & 21/03/95 & 16h33 & 89 & 20/05/95 & 20h36 \\
 22 & 22/01/95 & 07h01 & 56 & 23/03/95 & 11h02 & 90 & 22/05/95 & 15h04 \\
 23 & 24/01/95 & 01h30 & 57 & 25/03/95 & 05h30 & 91 & 24/05/95 & 09h32 \\
 24 & 25/01/95 & 19h56 & 58 & 26/03/95 & 23h58 & 92 & 26/05/95 & 04h01 \\
@@ -162,7 +164,7 @@ Once you have these, you should be able to write a little {\sc matlab} script th
 32 & 08/02/95 & 23h44 & 66 & 10/04/95 & 03h44 &  & & \\
 33 & 10/02/95 & 18h12 & 67 & 11/04/95 & 22h12 &  & & \\
 \end{tabular}
-\caption{ Begin of Eclipse between the conjunction on November 17, 1994 (20h00) and the opposition on June 1, 1995 (11h00). }
+\caption{ Begin of Eclipse between the conjunction on November 17, 1994 (20h00) and the opposition on June 1, 1995 (11h00). This data is provided to you in the file {\tt boe-con19941117-opp19950601.dat}}
 \end{table*}
 
 \begin{table*}
@@ -203,7 +205,7 @@ Once you have these, you should be able to write a little {\sc matlab} script th
 32 & 28/07/95 & 23h22 & 66 & 27/09/95 & 03h42 & & &\\
 33 & 30/07/95 & 17h51 & 67 & 28/09/95 & 22h11 & & &\\
 \end{tabular}
-\caption{End of Eclipse between the opposition on June 1, 1995 (11:00) and the conjunction on December 18, 1995 (22:00)}
+\caption{End of Eclipse between the opposition on June 1, 1995 (11:00) and the conjunction on December 18, 1995 (22:00). This data is provided to you in the file {\tt eoe-opp19950601-con19951218.dat}}
 \end{table*}
 
 
@@ -245,7 +247,7 @@ Once you have these, you should be able to write a little {\sc matlab} script th
 32 & 11/03/96 & 10h19 & 66 & 10/05/96 & 14h21 & & &\\
 33 & 13/03/96 & 04h47 & 67 & 12/05/96 & 08h50 & & &\\
 \end{tabular}
-\caption{Begin of Eclipse between the conjunction on December 18, 1995 (22h00) and the opposition on July 4, 1996 (12h00).}
+\caption{Begin of Eclipse between the conjunction on December 18, 1995 (22h00) and the opposition on July 4, 1996 (12h00). This data is provided to you in the file {\tt boe-con19951218-opp19960704.dat}}
 \end{table*}
 
 \begin{table*}
@@ -286,7 +288,7 @@ Once you have these, you should be able to write a little {\sc matlab} script th
 32 & 30/08/96 & 04h33 & 66 & 29/10/96 & 08h54 & & &\\
 33 & 31/08/96 & 23h02 & 67 & 31/10/96 & 03h22 & & &\\
 \end{tabular}
-\caption{End of Eclipse after the opposition on July 4, 1996 (12h00)}
+\caption{End of Eclipse after the opposition on July 4, 1996 (12h00). This data is provided to you in the file {\tt eoe-opp19960704-con199701xx.dat}}
 \end{table*}
 
 \section{References}
