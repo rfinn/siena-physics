@@ -59,7 +59,7 @@ Examine Figure~\ref{fig:JupIo}. The Earth is between a conjunction and an opposi
 \label{fig:JupIo}
 \end{figure}
 On this figure, indicate the points where the beginning and the end of the following four phenomena take place:
-\begin{description}
+\begin{description}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
 \item[Eclipse] The satellite enters the shadow of Jupiter.
 \item[Occultation] The satellite, as seen from Earth, goes behind Jupiter.
 \item[Shadow] The shadow of the satellite is seen on the planet.
@@ -76,40 +76,32 @@ On this figure, indicate the points where the beginning and the end of the follo
 We can now look at how R{\o}mer measured the speed of light.
 \begin{marginfigure}
 \includegraphics{Roemer.jpg}
-\caption{From the 1676 article describing R{\o}mer's method.}
+\caption{From the 1676 article describing R{\o}mer's method. Both Earth and Io are moving counterclockwise in this image.}
 \label{fig:sunJup}
 \end{marginfigure}
-Looking at figure~\ref{fig:sunJup} he noticed that the end of eclipses at $K$ or $E$ seemed to happen late if he started reckoning at point $L$ or $H$.  He reasoned that this delay was caused by the extra time it took light to propagate this extra distance. 
+Looking at figure~\ref{fig:sunJup} he noticed that if he used the times of the eclipses at point $L$ or $H$ as a ``start time" to then predict the times of subsequent ellipses, then the end of eclipses at $K$ or $E$ seemed to happen later than he would expect. He reasoned that this delay was caused by the extra time it took light to propagate this extra distance. 
 
 Although R{\o}mer never calculated a value for the speed of light, Christian Huygens quickly got R{\o}mer's data and did so, getting a value of $16 \frac{2}{3}$ Earth diameters per second (or $2.125\times10^8~{\rm m}/{\rm s}$).  Pretty good for 1676!
 
 \section{A modern recalculation}
 
-The exercise for this lab is to reconstruct R{\o}mers argumant and recalculate using modern observations.  Below is a table of eclipse timings from the mid 1990's.  This table, which I will also provide as a text file also so you can read it into {\sc MATLAB}, and the radius of the Earth's orbit is all you should need to calculate $c$.
+The exercise for this lab is to reconstruct R{\o}mers argumant and recalculate using modern observations.  Below is a table of eclipse timings from the mid 1990's.  This table, which I will also provide as a text file also so you can read it into the programming/calculation tool of your choice, and the radius of the Earth's orbit is all you should need to calculate $c$.
 
-You should first use the data to determine the period of Io.  I would suggest using data from a region of Earths orbit that is not affected significantly by the finite speed of light.  What part of the Earths orbit meets this criterion?
+You should first use the data to determine the period of Io.  I would suggest using data from a region of Earth's orbit that is not affected significantly by the finite speed of light.  What part of the Earth's orbit meets this criterion? {\it Check with the instructor that your period is reasonable, before proceeding with the rest of the lab.}
 
 Once you have determined a period, use it to predict the time of a later eclipse (either beginning or end of eclipse, depending on the data you are using).  Once you have the predicted time, find the difference in time with the corresponding eclipse observation from the tables.  By using this time difference and the distance the earth has moved between the two eclipse observations, you should be able to calculate the speed of light.
 
-If you are reading the data files into {\sc MATLAB}, I would suggest spending a few minutes building some tools to help your analysis. 
+If you are reading the data files using a programming language like python, I would suggest spending a few minutes building some tools to help your analysis. 
+For example, you may want to write functions that
+\begin{itemize}
+    \item Takes in a filename and reads the data into an array or arrays.
+    \item Takes the date and time format given in the data files and returns a format you can work with, either seconds or, if you are using python, using the {\tt datetime} library.
+\end{itemize}
 
-Write a function which takes a filename argument and reads the data into an array.   It should be called something like
-\begin{verbatim}
-eclipse_array = read_dat('eclipses.dat');
-\end{verbatim}
-You will probably need to use the {\tt fscanf} function, as in
-\begin{verbatim}
-a = fscanf(fp,'%d %d/%d/%d %dh%d');
-\end{verbatim}
-if you were to use a line like this in your function, {\tt a} would be array with six values for each eclipse: the number, day, month, year, hour, and minute of the eclipse.  It is a one dimensional array, so the hour (fifth number) of the third eclipse, for instance is in {\tt a(3*6+5)}.
+If you have these functions, performing the rest of the calculation should be straightforward. For those of you using a tool that allows you to 
+plot your data, you are encouraged to come up with plots or visualizations of your approach.
 
-Next write a function that takes an array like above and an eclipse number, and returns the time in a decimal format.  It could be days, hours, or minutes, but it is important to make it decimal to facilitate finding time differences.  It is much easier to calculate  516928-501637  than it is 24/12/94 23h28 minus 14/12/94 08h37.  Its call should look something like
-\begin{verbatim}
-time=get_time(3, eclipse_array);
-\end{verbatim}
-to get the time of the third eclipse in the file.
-
-Once you have these, you should be able to write a little {\sc matlab} script that will calculate the speed of light.
+If you are not comfortable with a programming language like python, you can get quite far using a spreadsheet like Excel or Google Sheets.
 
 \newthought{Those of you} doing the exercise ``by hand'' might find Wolfram Alpha useful for such things as finding the difference between two dates.  Visit the Alpha website and experiment with various date formats to make sure you understand the answers it gives you.
 
