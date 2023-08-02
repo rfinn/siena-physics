@@ -1,5 +1,4 @@
-BASE=   michelson
-ALL=	${BASE}.pdf
+ALL=	michelson.pdf week1.pdf week2.pdf week3.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
@@ -9,11 +8,15 @@ LATEX =	pdflatex
 	$(LATEX) $*
 	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
 
-${BASE}.pdf: ${BASE}-content.tex ${BASE}-title.tex
-
 all: $(ALL)
 
+michelson.pdf: michelson.tex michelson-title.tex michelson-content.tex
+
+week1.pdf: week1.tex michelson-title.tex 
+week2.pdf: week2.tex michelson-title.tex 
+week3.pdf: week3.tex michelson-title.tex 
+
 clean:
-	rm -f ${BASE}.log ${BASE}.dvi ${BASE}.aux ${BASE}.bbl ${BASE}.blg ${BASE}.out ${BASE}.pdf
+	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
 
 dummy:
