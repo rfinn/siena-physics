@@ -2,11 +2,12 @@ ALL=	electron-diffraction.pdf week1.pdf week2.pdf week3.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
-	$(LATEX) $*
-	$(LATEX) $*
-	$(LATEX) $*
-	$(LATEX) $*
-	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
+	@ echo -n "Making $* ... "
+	@ $(LATEX) $* >/dev/null 2>&1
+	@ $(LATEX) $* >/dev/null 2>&1
+	@ $(LATEX) $* >/dev/null 2>&1
+	@ rm -f $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
+	@ echo "done"
 
 all: $(ALL)
 
@@ -17,7 +18,11 @@ week2.pdf: week2.tex electron-diffraction-title.tex
 week3.pdf: week3.tex electron-diffraction-title.tex 
 
 clean:
-	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
+	rm -f *.log *.dvi *.aux *.bbl *.blg *.ps *.out
+
+nuke:
+	rm -f *.pdf *.log *.dvi *.aux *.bbl *.blg *.ps *.out
+
 
 dummy:
 
