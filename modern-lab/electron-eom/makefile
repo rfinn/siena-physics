@@ -1,4 +1,4 @@
-ALL=	electron-eom.pdf week1.pdf week2.pdf week3.pdf
+ALL=	electron-eom.pdf week1.pdf week2.pdf week3.pdf week1-rosenberry.pdf week2-rosenberry.pdf
 LATEX =	pdflatex
 
 %.pdf: %.tex
@@ -15,6 +15,9 @@ electron-eom.pdf: electron-eom.tex electron-eom-title.tex electron-eom-content.t
 week1.pdf: week1.tex electron-eom-title.tex 
 week2.pdf: week2.tex electron-eom-title.tex 
 week3.pdf: week3.tex electron-eom-title.tex 
+
+week1-rosenberry.pdf: week1-rosenberry.tex electron-eom-title.tex 
+week2-rosenberry.pdf: week2-rosenberry.tex electron-eom-title.tex 
 
 clean:
 	rm -f $*.log $*.dvi $*.aux $*.bbl $*.blg $*.ps $*.out
